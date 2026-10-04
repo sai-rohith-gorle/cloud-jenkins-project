@@ -4,9 +4,9 @@ pipeline {
 
     stages {
 
-        stage('Clone') {
+       stage('Clone') {
     steps {
-        git 'https://github.com/sai-rohith-gorle/cloud-jenkins-project.git'
+        git branch: 'main', url: 'https://github.com/sai-rohith-gorle/cloud-jenkins-project.git'
     }
 }
 
