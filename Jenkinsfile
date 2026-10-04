@@ -5,10 +5,10 @@ pipeline {
     stages {
 
         stage('Clone') {
-            steps {
-                git 'YOUR_GITHUB_REPOSITORY_URL'
-            }
-        }
+    steps {
+        git 'https://github.com/sai-rohith-gorle/cloud-jenkins-project.git'
+    }
+}
 
         stage('Build Docker Image') {
             steps {
